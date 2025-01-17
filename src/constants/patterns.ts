@@ -1,18 +1,15 @@
-/** @jsx React.createElement */
-import React from 'react'
-
 export const SVG_PATTERNS = {
   GRASS: {
     id: "grass",
-    pattern: () => (
+    pattern: `
       <pattern id="grass" patternUnits="userSpaceOnUse" width="10" height="10">
         <circle cx="5" cy="5" r="1" fill="#7a9968" opacity="0.3"/>
       </pattern>
-    )
+    `
   },
   STONES: {
     id: "stones",
-    pattern: () => (
+    pattern: `
       <pattern id="stones" patternUnits="userSpaceOnUse" width="20" height="20">
         <rect width="20" height="20" fill="#D0B49F"/>
         <path 
@@ -28,6 +25,6 @@ export const SVG_PATTERNS = {
           fill="none"
         />
       </pattern>
-    )
+    `
   }
 } as const;

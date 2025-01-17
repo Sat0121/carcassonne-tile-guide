@@ -43,23 +43,3 @@ const TilePreview: React.FC<{ id: string; type: 'monastery' | 'city' | 'road' }>
     </div>
   )
 }
-
-// メインのタイルガイドコンポーネント
-const TileGuide: React.FC = () => {
-  // サンプルデータ
-  const tiles = [
-    { id: 'A', type: 'monastery' as const },
-    { id: 'B', type: 'road' as const },
-    { id: 'C', type: 'city' as const },
-  ]
-
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {tiles.map(tile => (
-        <TilePreview key={tile.id} {...tile} />
-      ))}
-    </div>
-  )
-}
-
-export default TileGuide
