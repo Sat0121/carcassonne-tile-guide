@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-bg {
+    background-color: #f8f5f0;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+}
+
+.tile-container {
+    border: 2px solid #8B4513;
+    box-shadow: 
+        0 0 0 4px #FFF,
+        0 0 0 6px #8B4513;
+    border-radius: 8px;
+}
+
+.color-spot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
